@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Creating object with function</title>
+</head>
+<body>
+<script>
+    //Create an Object
+    var cody = new Object();
+
+   //Create properties
+    cody.living = true;
+    cody.age = 24;
+    cody.gender = 'Male';
+
+    //Create a function
+    cody.getGender = function() {
+        return this.gender;
+    }
+
+    //print to console
+    console.log(cody.getGender());
+</script>
+</body>
+</html>

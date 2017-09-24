@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Encapsulating complex objects</title>
+</head>
+<body>
+    <script>
+        var object1 = {
+            object1_1: {
+                object1_1_1: { foo: 'bar' },
+                object1_1_2: {},
+            },
+            object1_2: {
+                object1_2_1: {},
+                object1_2_2: {},
+            }
+        };
+        console.log(object1.object1_1.object1_1_1.foo);
+
+        //Sample 31
+        /*Here is an example of encapsulaion using functions */
+        var myFunction = function() {
+            var myFunction1 = function() {
+                var myFunction2 = function() {
+                    var foo = 'bar';
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>

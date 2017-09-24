@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        //Create an object
+        var myObject = {};
+
+        //not copied by value, just the reference is copied
+        var copyOfMyObject = myObject;
+
+        //Manipulate the value stored in myObject
+        myObject.foo = 'bar';
+
+        /* Both will have foo property because they reference the same object */
+        console.log(myObject);
+        console.log(copyOfMyObject);
+
+        //Sample19
+
+        var objectA = { same: 'same' };
+        var objectB = { same: 'same' };
+
+        //Logs false, Javascript does not care that they are identical and of the same object type.
+        Console.log(objectA === objectB);
+
+        //How complex objects are measured for equality
+        var objectA = { foo: 'bar' };
+        var objectB = objectA;
+
+        //Logs true because they reference the same object.
+        console.log(objectA === objectB);
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Native Javascript objects</title>
+</head>
+<body>
+    <script>
+        //Instantiate an instance for each native constructor using new operator
+
+        //Primitive types
+        var myNumber = new Number(23);
+        var myString = new String("Alen Walker");
+        var myBoolean = new Boolean(true);
+
+        var myNull = null;
+        var myUndefined = undefined;
+
+        //Complex types/ Reference types
+        var myObject = new Object();
+        var myArray = new Array('Alen', 'Walker', 'Faded');
+        var myFunction = new Function("x", "y", "return x*y");
+        var myDate = new Date(Date.now());
+
+        var myRegEx = new RegExp('\\b[a-z]+\\b');
+        var myError = new Error('Null Exception!');
+
+        //Log constructor
+        console.log(myNumber.constructor);
+        console.log(myString.constructor);
+        console.log(myBoolean.constructor);
+
+        console.log(myNull);
+        console.log(myUndefined);
+
+        console.log(myObject.constructor);
+        console.log(myArray.constructor);
+        console.log(myFunction.constructor);
+        console.log(myDate.constructor);
+
+        console.log(myRegEx.constructor);
+        console.log(myError.constructor);
+    </script>
+</body>
+</html>

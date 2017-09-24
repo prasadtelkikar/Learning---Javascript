@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var price1 = 10;
+        var price2 = 10;
+
+        //A complec numeric object because new was used.
+        var price3 = new Number('10');
+        var price4 = price3;
+
+        //logs true
+        console.log(price1 === price2);
+
+        //Logs false because price3 contains a complex number object and price 1 is a primitive value
+        console.log(price1 === price3);
+
+        //Logs true because complex complex values are equal by reference
+        console.log(price3 === price4);
+
+
+    </script>
+</body>
+</html>

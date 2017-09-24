@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>using hasOwnProperty to varify that an object property is not from prototype chain</title>
+</head>
+<body>
+    <script>
+        var myObject = { foo: 'value' };
+
+        console.log(myObject.hasOwnProperty('foo')); //Logs true
+        console.log('****************************');
+        //Versus a property from the prototype chain
+        console.log(myObject.hasOwnProperty('toString')); //Logs false
+        console.log('****************************');
+
+        //in operator to check object contains a given property
+        console.log('foo' in myObject); //true
+        console.log('****************************');
+
+        console.log('toString' in myObject);  //true as it is in prototype chain object.toString property
+        console.log('****************************');
+
+        //Sample 44
+        var cody = {
+            living: true,
+            age: 24,
+            gender: 'Male'
+        };
+
+        //key is a variable to represent each property name.
+        for (var key in cody) {
+            //Avoid properties inherited from the prototype chain
+            if (cody.hasOwnProperty(key))
+                console.log(key);
+        }
+        console.log('****************************');
+
+        //Sample 45
+        for (var key in window)
+            console.log(key);
+        console.log('****************************');
+
+        for (var key in window.document)
+            console.log(key);
+    </script>
+</body>
+</html>

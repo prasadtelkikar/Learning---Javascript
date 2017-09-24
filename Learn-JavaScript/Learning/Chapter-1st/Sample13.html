@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Primitive&Complex values</title>
+</head>
+<body>
+    <script>
+        //Primitive type: No object get created when producing primitive values.
+        var primitiveString1 = 'foo';
+        var primitiveString2 = String('foobar');
+
+        //Complex type: Using a constructor and the "new" keyword for creating objects.
+        var complexString = new String('foobar');
+
+        //Print : string - string- object
+        console.log(typeof primitiveString1);
+        console.log(typeof primitiveString2);
+        console.log(typeof complexString);
+    </script>
+</body>
+</html>

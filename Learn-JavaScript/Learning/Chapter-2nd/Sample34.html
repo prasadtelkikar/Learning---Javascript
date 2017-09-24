@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Concatination</title>
+</head>
+<body>
+    <script>
+        var fooBarObject = { foobar: 'Instance of foo bar' };
+        var string1 = 'foo';
+        var string2 = 'bar';
+
+        //Concatination
+        console.log(fooBarObject[string1 + string2]);
+
+        //Sample 36
+        //Delete property
+        delete fooBarObject.foobar;
+
+        //Log false as it was deleted from foo bar object
+        console.log('foobar' in fooBarObject);
+
+        //Sample 37,38,39
+        var myArray = ['foo', 'bar'];
+        console.log(myArray.join());
+
+        console.log(myArray.hasOwnProperty('join'));
+
+        console.log(fooBarObject.hasOwnProperty('foobar'));
+        console.log(myArray.toLocaleString());
+    </script>
+</body>
+</html>

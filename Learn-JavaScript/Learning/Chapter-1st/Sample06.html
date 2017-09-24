@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Typeof</title>
+</head>
+<body>
+<script>
+    /*Person is a constructor function. It was written with the intent of being used with the new keyword. */
+    var Person = function Person(living, age, gender) {
+        this.living = living;
+        this.age = age;
+        this.gender = gender;
+
+        this.getGender = function() {
+            return this.gender;
+        }
+    }
+
+    //Instantiate a person object named cody.
+    var cody = new Person(true, 24, 'Male');
+    var lisa = new Person(true, 20, 'Female');
+
+    //Print tyoe of instance
+    console.log(typeof cody);
+
+    //Multiple instance of same function
+    console.log(cody);
+    console.log(lisa);
+
+    //Construction of cody object
+    console.log(cody.constructor);
+</script>
+</body>
+</html>

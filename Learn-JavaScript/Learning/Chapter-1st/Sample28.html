@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Can't assign properties to primitive type</title>
+</head>
+<body>
+    <script>
+        //Complex objects
+        var myString = new String();
+        var myBoolean = new Boolean(true);
+        var myNumber = new Number();
+
+        //Define properties
+        myString.Prop = 'test';
+        myBoolean.Prop = 'test';
+        myNumber.Prop = 'test';
+
+        //test - test - test
+        console.log(myString.Prop, myBoolean.Prop, myNumber.Prop);
+
+        //Primitive instance
+        var myStringPri = 'String';
+        var myBooleanPri = true;
+        var myNumberPri = 1;
+
+        //try to define properties
+        myStringPri.Prop = 'test';
+        myBooleanPri.Prop = 'test';
+        myNumberPri.Prop = 'test';
+
+        //undefined - undefined - undefined
+        console.log(myStringPri.Prop, myBooleanPri.Prop, myNumberPri.Prop);
+    </script>
+</body>
+</html>

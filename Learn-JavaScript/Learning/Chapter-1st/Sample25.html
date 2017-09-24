@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var CustomConstructor = function CustomConstructor() { return 'Wow!'; };
+        var instnaceCustomConstructor = new CustomConstructor();
+
+        //Logs true
+        console.log(instnaceCustomConstructor.constructor === CustomConstructor);
+
+        //return status
+        console.log(CustomConstructor.constructor); 
+    </script>
+</body>
+</html>

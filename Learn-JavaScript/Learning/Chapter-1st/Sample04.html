@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Create custom object</title>
+</head>
+<body>
+<script>
+    //Custom Object using function
+    var Person = function(living, age, gender) {
+        this.living = living;
+        this.age = age;
+        this.gender = gender;
+
+        this.getGender = function () {
+            return this.gender;
+        }
+    }
+
+    //Instantiate Person
+    var cody = new Person(true, 24, 'Male');
+    console.log(cody.getGender());
+
+    //Instantiation of string is work as above
+    var myString = new String("foo");
+    console.log(myString);
+</script>
+</body>
+</html>
