@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>True/False : certain things are false, everything else is true</title>
+</head>
+<body>
+    <script>
+
+        //All of these return a false boolean value
+        console.log(Boolean(0));
+        console.log(Boolean(-0));
+        console.log(Boolean(null));
+        console.log(Boolean(false));
+        console.log('');
+        console.log(Boolean(undefined));
+        console.log(Boolean(null));
+
+        //All of these return a true boolean value
+        console.log(Boolean(1234));
+        console.log(Boolean('false')); //'False' as a string is not false the boolean value
+
+        console.log(Boolean(Math));
+        console.log(Boolean(Array()));
+
+    </script>
+</body>
+</html>
