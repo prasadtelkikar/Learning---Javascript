@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>First html with JS</title>
+</head>
+<body>
+    <p>
+        Click following button:
+    </p>
+    <button onclick="myFirstFunction()" id="userInput">Click it</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFirstFunction() {
+            var personName = prompt("Please enter your name", "Prasad Telkikar");
+            //TODO: Test case for empty person name is failing. NEED TO WORK ON IT
+            if (personName != null) {
+                document.getElementById("demo").innerHTML = "Welcome" + personName + "to the java script world";
+            } else {
+                window.onerror = function() {
+                    alert("wrong inputs");
+                    return true;
+                }
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
