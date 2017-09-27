@@ -95,16 +95,21 @@
     <Content Include="Learning\Chapter-2nd\Sample41.html" />
     <Content Include="Learning\Chapter-2nd\Sample47.html" />
     <Content Include="Learning\Chapter-2nd\Sample49.html" />
-    <Content Include="Learning\Chapter-5rd\Sample52.html" />
-    <Content Include="Learning\Chapter-5rd\Sample55.html" />
+    <Content Include="Learning\Chapter-5th\Sample52.html" />
+    <Content Include="Learning\Chapter-5th\Sample55.html" />
     <Content Include="Learning\Chapter-6th\ImplementationWithHTML.html" />
     <Content Include="Learning\Chapter-6th\Sample56.html" />
+    <Content Include="Learning\Chapter-6th\Sample57.html" />
+    <Content Include="Learning\Chapter-6th\Sample58.html" />
+    <Content Include="Learning\Chapter-6th\Sample59.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Learning\Chapter-7th\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

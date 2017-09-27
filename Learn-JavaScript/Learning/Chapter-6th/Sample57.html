@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Working with primitive types</title>
+</head>
+<body>
+    <script>
+        //Numbers treated as an object.
+        var numberObject = new Number(1.0333);
+        console.log(numberObject);
+        console.log(typeof numberObject);
+        console.log(numberObject.toFixed());
+        console.log(numberObject['toFixed']());
+
+        //Number as a Literal
+        var numberLiteral = 1.0333;
+        console.log(numberLiteral);
+        console.log(typeof numberLiteral);
+        console.log(numberLiteral.toFixed());
+        console.log(numberLiteral['toFixed']());
+
+        console.log('1.0333');
+        console.log(typeof ('1.0333'));
+        console.log((1.0333).toString());
+        console.log((1.033)['toString']());
+
+    </script>
+</body>
+</html>
