@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Difference between null and undefined</title>
+</head>
+<body>
+    <script>
+        var ferrari;
+        var porsche = null;
+
+        console.log(typeof ferrari);
+        console.log(typeof porsche);
+
+        //Difference between == and ===
+        console.log(ferrari === porsche);  // check value with its type
+        console.log(ferrari == porsche);    // only checks value NOT ITS TYPE
+    </script>
+</body>
+</html>
