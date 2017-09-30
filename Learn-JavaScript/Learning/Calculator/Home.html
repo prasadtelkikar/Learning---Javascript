@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Initial commit</title>
+</head>
+<body>
+<textarea id="firstTextbox">0</textarea>
+<textarea id="secondTextbox">0</textarea> =
+<textarea id="result">0</textarea>
+<button id="addition" onclick="myFunction()">Addition</button>
+<script>
+    var myFunction = function () {
+        debugger;
+        var firstItem = document.getElementById("firstTextbox").innerText;
+        var secondItem = document.getElementById("secondTextbox").innerText;
+        var sum = firstItem + secondItem;
+
+        console.log(sum);
+        document.getElementById("result").innerHTML = sum;   
+    }
+</script>
+</body>
+</html>
