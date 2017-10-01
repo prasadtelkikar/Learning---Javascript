@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Self invoking function expression</title>
+</head>
+<body>
+    <script>
+        //Self invoking function
+        var helloWorld = function () { console.log("Hello world !!!") }();
+
+        //Self invoking anonymous function statement
+
+        //Most commonly used/seen in the world
+        (function (msg) {
+            console.log(msg);
+        })('hi');
+
+        //Sightly different; but achieving same thing
+        (function (msg) {
+            console.log(msg)
+        }('Hi'));
+    </script>
+</body>
+</html>

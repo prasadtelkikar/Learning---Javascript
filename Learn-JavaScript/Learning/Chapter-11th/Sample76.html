@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Different ways to define function</title>
+</head>
+<body>
+    <script>
+        var addNumberA = new Function ('num1', 'num2', 'return num1 + num2');
+        console.log(addNumberA(2, 2));
+
+        /* Alternately, a single comma-seperated string with arguments ca be the first parameter of the constructor, with the function body following */
+        var addNumberB = new Function('num1, num2', 'return num1 + num2');
+        console.log(addNumberB(2, 2));
+        
+        //Could also be written the literal way, which is much more common
+        var addNumberB = function (num1, num2) {
+            return num1 + num2;
+        };
+        
+        console.log(addNumberB(2, 2));
+    </script>
+</body>
+</html>

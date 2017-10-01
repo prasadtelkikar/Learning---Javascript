@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Callee: used for recursion</title>
+</head>
+<body>
+    <script>
+        var foo = function foo() {
+            console.log(arguments.callee); //Logs foo
+            //Callee could be used to invoke recursively the foo function
+        };
+
+        var myFunction = function (x, y, z) {
+            return arguments.length;
+        }
+
+        //Difference between arguments and myFunction
+        var myFunctions = function (x, y, z) {
+            return myFunction.length;
+        }
+
+        //Logs 0 because no paramters were passed to the function
+        console.log(myFunction());
+        //Logs 3 because no paramters were passed to the function
+        console.log(myFunction(2, 4, 6));
+
+        //Logs 3 because we are using myFunctions instead of arguments
+        console.log(myFunctions());
+
+
+    </script>
+</body>
+</html>

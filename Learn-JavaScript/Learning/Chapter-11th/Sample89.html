@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Defining a function</title>
+</head>
+<body>
+    <script>
+        /* Function constructor: The last paramter is the function logic everything before it is a parameter */
+        var addConstructor = new Function('x', 'y', 'return x + y');
+
+        //Function Statement
+        function addStatement(x, y) {
+            return x + y;
+        }
+
+        //Function expression
+        var addExpression = function (x, y) {
+            return x + y;
+        }
+
+        console.log(addConstructor(2, 2), addStatement(2, 2), addExpression(2, 2));
+    </script>
+</body>
+</html>

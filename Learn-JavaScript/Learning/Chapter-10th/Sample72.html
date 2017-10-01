@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Objects with Object</title>
+</head>
+<body>
+    <script>
+
+        //Object using object literal
+        var cody = new Object();
+        cody.living = true;
+        cody.age = 23;
+        cody.gender = 'Male';
+        cody.getGender = function () { return cody.gender; }
+
+        console.log(cody);
+
+        //Sample73
+        var cody1 = {
+            living: true,
+            age: 23,
+            gender: 'Male',
+            getGender: function () { return gender; }
+            //Notice last property has no comma after it.
+        }
+
+        console.log(cody1);
+    </script>
+</body>
+</html>

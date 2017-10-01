@@ -76,6 +76,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Learning\Calculator\Home.html" />
+    <Content Include="Learning\Chapter-10th\Sample70.html" />
+    <Content Include="Learning\Chapter-10th\Sample71.html" />
+    <Content Include="Learning\Chapter-10th\Sample72.html" />
+    <Content Include="Learning\Chapter-11th\Sample76.html" />
+    <Content Include="Learning\Chapter-11th\Sample79.html" />
+    <Content Include="Learning\Chapter-11th\Sample81.html" />
+    <Content Include="Learning\Chapter-11th\Sample84.html" />
+    <Content Include="Learning\Chapter-11th\Sample88.html" />
+    <Content Include="Learning\Chapter-11th\Sample89.html" />
+    <Content Include="Learning\Chapter-11th\Sample92.html" />
     <Content Include="Learning\Chapter-1st\Sample01.html" />
     <Content Include="Learning\Chapter-1st\Sample00.html" />
     <Content Include="Learning\Chapter-1st\Sample02.html" />
@@ -98,7 +108,6 @@
     <Content Include="Learning\Chapter-2nd\Sample49.html" />
     <Content Include="Learning\Chapter-5th\Sample52.html" />
     <Content Include="Learning\Chapter-5th\Sample55.html" />
-    <Content Include="Learning\Chapter-6th\ImplementationWithHTML.html" />
     <Content Include="Learning\Chapter-6th\Sample56.html" />
     <Content Include="Learning\Chapter-6th\Sample57.html" />
     <Content Include="Learning\Chapter-6th\Sample58.html" />
@@ -110,9 +119,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Learning\Chapter-7th\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

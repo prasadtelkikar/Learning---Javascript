@@ -1,24 +1,29 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Initial commit</title>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<textarea id="firstTextbox">0</textarea>
-<textarea id="secondTextbox">0</textarea> =
-<textarea id="result">0</textarea>
-<button id="addition" onclick="myFunction()">Addition</button>
-<script>
-    var myFunction = function () {
-        debugger;
-        var firstItem = document.getElementById("firstTextbox").innerText;
-        var secondItem = document.getElementById("secondTextbox").innerText;
-        var sum = firstItem + secondItem;
 
-        console.log(sum);
-        document.getElementById("result").innerHTML = sum;   
-    }
-</script>
+<div class="jumbotron text-center">
+    <h1>Calculator</h1>
+    <p>Learning html, bootstrap, css and javascript</p>
+    <p>Learn by doing: Creating calculator</p>
+</div>
+  
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>Column 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>

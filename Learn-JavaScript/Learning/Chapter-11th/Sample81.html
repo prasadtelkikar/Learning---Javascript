@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Define a function</title>
+</head>
+<body>
+    <script>
+        var addFunction = function (number1, number2) {
+            return number1 + number2
+        }
+        console.log(addFunction(3, 3));
+
+        var addFunctionArg = function () {
+            return arguments[0] + arguments[1];
+        }
+        console.log(addFunctionArg(4, 4));
+
+        //Sample 83
+        var myObject = {
+            name: 'myObject1',
+            myMethod: function () { console.log(this); }
+        };
+        myObject.myMethod();    //Logs 'myObject1'
+
+        var myObject1 = function () { console.log(this) }
+        myObject1();
+    </script>
+</body>
+</html>
