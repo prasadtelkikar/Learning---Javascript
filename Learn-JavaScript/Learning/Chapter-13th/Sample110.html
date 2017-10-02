@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Variable scope</title>
+</head>
+<body>
+    <script>
+
+        //Global scope
+        var foo = 0;
+        //Log 0
+        console.log(foo);
+        var myFunction = function () {
+            //Local scope
+            var foo = 10;
+            //Logs 10
+            console.log(foo);
+            var myInnerFuction = function () {
+                //Local scope
+                var foo = 20;
+                //Logs 20. search for nearest foo variable and print the value of closed/nearest variable
+                console.log(foo);
+            }();
+
+            //Logs 10
+            console.log(foo);
+        }();
+        //Logs 0
+        console.log(foo);
+    </script>
+</body>
+</html>

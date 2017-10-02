@@ -79,6 +79,7 @@
     <Content Include="Learning\Chapter-10th\Sample70.html" />
     <Content Include="Learning\Chapter-10th\Sample71.html" />
     <Content Include="Learning\Chapter-10th\Sample72.html" />
+    <Content Include="Learning\Chapter-11th\Sample97.html" />
     <Content Include="Learning\Chapter-11th\Sample76.html" />
     <Content Include="Learning\Chapter-11th\Sample79.html" />
     <Content Include="Learning\Chapter-11th\Sample81.html" />
@@ -86,6 +87,19 @@
     <Content Include="Learning\Chapter-11th\Sample88.html" />
     <Content Include="Learning\Chapter-11th\Sample89.html" />
     <Content Include="Learning\Chapter-11th\Sample92.html" />
+    <Content Include="Learning\Chapter-11th\Sample94.html" />
+    <Content Include="Learning\Chapter-12th\Sample100.html" />
+    <Content Include="Learning\Chapter-12th\Sample102.html" />
+    <Content Include="Learning\Chapter-12th\Sample104.html" />
+    <Content Include="Learning\Chapter-12th\Sample105.html" />
+    <Content Include="Learning\Chapter-12th\Sample107.html" />
+    <Content Include="Learning\Chapter-12th\Sample98.html" />
+    <Content Include="Learning\Chapter-13th\Sample110.html" />
+    <Content Include="Learning\Chapter-13th\Sample111.html" />
+    <Content Include="Learning\Chapter-13th\Sample112.html" />
+    <Content Include="Learning\Chapter-13th\Sample114.html" />
+    <Content Include="Learning\Chapter-13th\Sample116.html" />
+    <Content Include="Learning\Chapter-13th\Sample117.html" />
     <Content Include="Learning\Chapter-1st\Sample01.html" />
     <Content Include="Learning\Chapter-1st\Sample00.html" />
     <Content Include="Learning\Chapter-1st\Sample02.html" />

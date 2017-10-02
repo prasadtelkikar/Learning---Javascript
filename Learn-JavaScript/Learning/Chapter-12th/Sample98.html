@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>this keyword</title>
+</head>
+<body>
+    <script>
+        var cody = {
+            living: true,
+            age: 23,
+            gender: 'Male',
+            getGender: function () { return cody.gender; }
+        };
+        console.log(cody.getGender());
+
+        //Sample 99
+        //Access gender using this operator
+        var cody = {
+            living: true,
+            age: 23,
+            gender: 'Female',
+            getGender: function () { return this.gender; }
+        };
+
+        console.log(cody.getGender())
+    </script>
+</body>
+</html>

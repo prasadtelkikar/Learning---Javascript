@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>use of this operator</title>
+</head>
+<body>
+    <script>
+        var foo = 'foo';
+        var myObject = { foo: 'I am myObject.foo' };
+
+        var sayFoo = function () {
+            console.log(this['foo']);
+        };
+
+        myObject.sayFoo = sayFoo;
+
+        //Call
+        myObject.sayFoo();      //Logs 'I am myObject.foo'
+
+        sayFoo();       //Logs 'foo' because here this refers windows and print foo string defined in the script block
+    </script>
+</body>
+</html>

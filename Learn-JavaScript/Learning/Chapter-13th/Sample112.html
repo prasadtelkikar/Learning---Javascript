@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>use of var inside of function to declare variable and avoid scope gotcha</title>
+</head>
+<body>
+    <script>
+        var foo = function () {
+            var boo = function () {
+                //No var used, so bar is placed in the global scope at window.bar
+                bar = 2;
+            }();
+        }();
+        //Logs 2
+        console.log(bar);
+
+        var foo = function () {
+            var boo = function () {
+                // var used, so bar is placed in the local scope
+                var bar1 = 2;
+            }();
+        }();
+        //Logs undefined i.e. error occurs
+        console.log(bar1);
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var Person = function (x) {
+            if (x) { this.fullName = x };
+        };
+
+            Person.prototype.WhatIsMyFullName = function () {
+                //'this' refers to the instance created from Person()
+                return this.fullName;
+            }
+
+            var cody = new Person('Prasad Telkikar');
+            var lisa = new Person('Chinmay Telkikar');
+
+            //Call the inherited WhatIsMyFullName method, which uses this to refer to the instance
+            console.log(cody.WhatIsMyFullName(), lisa.WhatIsMyFullName());
+
+            /*Prototype chain is still in effect, so if the instance does not have a full name property, it will look for it in the prototype
+            chain. Next, we add a fullName property to both the Person prototype and the object prototype. see the notes that follow this exampl */
+
+            Object.prototype.fullName = 'Bhushan Telkikar';
+            var bhushan = new Person();
+
+            //Logs Bhushn Telkikar
+            console.log(bhushan.WhatIsMyFullName());
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Scope is determined during function defination, not invocation</title>
+</head>
+<body>
+    <script>
+        var parentFunction = function () {
+            var foo = 'foo';
+            //Anonymous function being returned
+            return function () {
+                console.log(foo);
+            }
+        }
+
+        //NestedFunction refers to the nested function returned from parentFunction
+        var nestedFunction = parentFunction();
+
+        //Logs foo because the returned function acesses foo via the scope chain
+        nestedFunction();
+    </script>
+</body>
+</html>

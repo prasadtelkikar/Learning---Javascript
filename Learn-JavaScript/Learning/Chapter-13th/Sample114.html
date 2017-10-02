@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Scope chain</title>
+</head>
+<body>
+    <script>
+        //Global scope
+        var x = 10;
+        var foo = function () {
+            //Local scope of foo()
+            var y = 20;
+            var bar = function () {
+                //Local scope of bar()
+                var z = 30;
+
+                //z is local and x and y are found in scope chain
+                console.log(x + y + z);
+            }();
+        }
+
+        //Logs 60
+        foo();
+    </script>
+</body>
+</html>

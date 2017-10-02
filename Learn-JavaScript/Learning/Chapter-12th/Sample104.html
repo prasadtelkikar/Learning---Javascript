@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Scope chain</title>
+</head>
+<body>
+    <script>
+        var myObject = {
+            myProperty: 'I can see the light',
+            myMethod: function () {
+                //Store a reference to this i.e. myObject in myMthod scope
+                var that = this;
+                var helperFunction = function () {
+                    //child function
+                    //Logs 'I can see the light' via scope chain because that =  this.
+                    console.log(that.myProperty)
+
+                    //Logs windows object, if we don't use "that"
+                    console.log(this);  //Logs window object, if we don't use "that"
+                }();
+            }
+        }
+
+        //Invoke myMethod
+        myObject.myMethod();
+    </script>
+</body>
+</html>

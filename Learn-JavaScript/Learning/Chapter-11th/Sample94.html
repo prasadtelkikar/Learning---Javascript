@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<script>
+    var fooq = function () {
+        var bar = function () {
+            var goo = function () {
+                //Logs reference to head window object
+                console.log(this);
+            }();
+        }();
+    }();
+
+    //Sample 95
+    //Function can be sent to, and  sent back from, functions
+    var foo = function (f) {
+        return f;
+    }
+
+    var bar = foo(function () { console.log('Hi'); });
+
+    //Calling
+     bar();
+</script>
+</body>
+</html>

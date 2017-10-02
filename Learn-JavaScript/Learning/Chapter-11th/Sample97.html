@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Recursion</title>
+</head>
+<body>
+    <script>
+        var countDownFrom = function countDownFrom(num) {
+            console.log(num);
+            num--;
+            //Exit condition
+            if (num < 0)
+                return false;
+
+            //Recursion call
+            countDownFrom(num);
+        };
+
+        //Call method
+        countDownFrom(10);
+    </script>
+</body>
+</html>

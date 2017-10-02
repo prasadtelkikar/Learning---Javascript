@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>this keyword refers to the head object in nested funciton</title>
+</head>
+<body>
+    <script>
+        var myObject = {
+            func: function () {
+                //Logs myObject
+                console.log(this);
+                func1 = function () {
+                    //Logs window, and will do so from this point on.
+                    console.log(this);
+                    func2 = function () {
+                        //Logs window, as it's the head object
+                        console.log(this);
+                    }();
+                }();
+            }
+        }
+        myObject.func();
+    </script>
+</body>
+</html>

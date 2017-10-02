@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>One more example of scope chain</title>
+</head>
+<body>
+    <script>
+        var countFromZero = function () {
+            var count = 0;
+            //Return nested child function when countFromZero is invoked
+            return function () {
+                //count is defined up the scope chainm in the parent function
+                return ++count;
+            }
+        }(); //Invoke immediately.
+
+        console.log(countFromZero());   //Logs 1
+        console.log(countFromZero());   //Logs 2
+        console.log(countFromZero());   //Logs 3
+    </script>
+</body>
+</html>

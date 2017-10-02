@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS does not have blocked scope</title>
+</head>
+<body>
+    <script>
+        //Global scope
+        var foo = 1;
+
+        if (true) {
+            //Local scope till end of if condition
+            var foo = 2;
+            for (var i = 3; i <= 5; i++) {
+                foo = i;
+                console.log(foo);
+            }
+        }
+    </script>
+</body>
+</html>
