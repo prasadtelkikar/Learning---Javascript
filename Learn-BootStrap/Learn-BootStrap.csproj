@@ -75,8 +75,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="w3school\BSButtons.html" />
+    <Content Include="Images\BSImage.jpg" />
     <Content Include="w3school\BSGetStarted.html" />
+    <Content Include="w3school\BSGlyphicon.html" />
     <Content Include="w3school\BSGridBasics.html" />
+    <Content Include="w3school\BSProgressBar.html" />
+    <Content Include="w3school\BSTable.html" />
+    <Content Include="w3school\BSTypography.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
