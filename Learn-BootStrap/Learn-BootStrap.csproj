@@ -75,13 +75,22 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="w3school\BSButtons.html" />
+    <Content Include="Images\ARRehman1.jpg" />
+    <Content Include="Images\ARRehman2.jpg" />
+    <Content Include="Images\ARRehman3.jpg" />
     <Content Include="Images\BSImage.jpg" />
+    <Content Include="w3school\BSButtons.html" />
+    <Content Include="w3school\BSCarousel.html" />
+    <Content Include="w3school\BSCollapse.html" />
+    <Content Include="w3school\BSDropdown.html" />
+    <Content Include="w3school\BSForms.html" />
     <Content Include="w3school\BSGetStarted.html" />
     <Content Include="w3school\BSGlyphicon.html" />
     <Content Include="w3school\BSGridBasics.html" />
+    <Content Include="w3school\BSInputs.html" />
     <Content Include="w3school\BSProgressBar.html" />
     <Content Include="w3school\BSTable.html" />
+    <Content Include="w3school\BSTabsPills.html" />
     <Content Include="w3school\BSTypography.html" />
     <Content Include="Web.config" />
   </ItemGroup>

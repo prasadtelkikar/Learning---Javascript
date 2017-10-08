@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bootstrap collapsible</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button class="btn btn-info" data-toggle="collapse" data-target="#demo">Collapsible</button>
+        <div id="demo" class="collapse">
+            Here is the demo for collapsible button......
+            <br />
+            Here you can add text or list which can display or collapse when user clicks the button...
+        </div>
+
+        <br />
+        <br />
+
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">panel body....</div>
+                    <div class="panel-footer">Panel footer...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
