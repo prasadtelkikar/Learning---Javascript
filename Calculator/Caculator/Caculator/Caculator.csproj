@@ -75,6 +75,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Backend.js" />
     <Content Include="HomePage.html" />
     <Content Include="Images\ProjectedStructure.png" />
     <Content Include="Web.config" />
