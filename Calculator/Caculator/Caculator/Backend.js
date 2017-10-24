@@ -1,7 +1,11 @@
-﻿function DisplayResult() {
-    var value = document.getElementById("extra7").value;
-    console.log(value);
-    alert(value);
+﻿//Global variables
+var previousValue = 0;
+var result = 0;
+var operator = '';
+function DisplayResult() {
+    if (confirm('Result:' + document.getElementById('extra7').value + '. Do you want to clear?')) {
+        document.getElementById('extra7').innerText = "";
+    }
 }
 
 function isNumber(evt) {
@@ -16,7 +20,10 @@ function isNumber(evt) {
 function GetOperation(operator) {
     switch (operator) {
         case '+':
-            console.log('Addition');
+            previousValue = document.getElementById('extra7').value;
+            document.getElementById('extra7').placeholder = "Add second operand";
+            document.getElementById('extra7').value = "";
+            operator = '+';
             break;
         case '-':
             console.log('Substraction');
@@ -31,10 +38,13 @@ function GetOperation(operator) {
             console.log("Undefined symbol");
             break;
     }
-    console.log(oper);
     return true;
 }
 
+function PrintResult() {
+    var currentValue = document.getElementById('extra7').value;
+    document.getElementById('extra7').value = eval(currentValue);
+}
 function PutOperand(clicked_id) {
     //debugger;
     switch (clicked_id) {
@@ -67,6 +77,18 @@ function PutOperand(clicked_id) {
             break;
         case 'btn9th':
             document.getElementById('extra7').value += '9';
+            break;
+        case 'btnSum':
+            document.getElementById('extra7').value += '+';
+            break;
+        case 'btnSub':
+            document.getElementById('extra7').value += '-';
+            break;
+        case 'btnMul':
+            document.getElementById('extra7').value += '*';
+            break;
+        case 'btnDiv':
+            document.getElementById('extra7').value += '/';
             break;
     default:
     }
