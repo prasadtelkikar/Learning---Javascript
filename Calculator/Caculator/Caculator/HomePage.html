@@ -20,13 +20,13 @@
         background-color: gainsboro;
         padding-top: 50px;
     }
-
     .jumbotron-button-panel {
-        background-color: gainsboro;
         width: 200px;
         height: 200px;
+        margin: 0 !important;
+        padding: 0 !important;
+    
     }
-
     .container-fluid {
         padding: 60px;
     }
@@ -70,6 +70,40 @@
         font-size: 42px;
         line-height: 35px;
         width: 60%;
+    }
+    .col-sm-6{
+        background-color: gainsboro;
+    }
+    .calc-board{
+        padding: 2%;
+        margin: 1%;
+    }
+    .btn {
+        width: 10%;
+        height: 10%;
+        margin: 0;
+        line-height: 50px;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        cursor: pointer;
+        display: inline-block;
+        padding: 6px 12px;
+        color: white;
+        text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+        vertical-align: middle;
+        border-radius: 0 !important;
+        background: black; 
+        border: 1px solid #ccc;
+    }
+    .btn:hover{
+        background: white;
+    }
+    .operation{
+        background: rgb(158, 152, 152);
+    }
+    .scientific{
+        background: rgb(111, 221, 164);
     }
 </style>
 <body>
@@ -124,14 +158,50 @@
             </div>
         </div>
     </div>
-
-    <div class="col-sm-6">
-        <div class="jumbotron jumbotron-button-panel">
-        //Buttons
+    <div class="col-sm-12">
+        <div id="calc Board" class="calc-board">
+        <div class="row-fluid">
+            <a href="#" class="btn" data-key="57">9</a>
+            <a href="#" class="btn" data-key="56">8</a>
+            <a href="#" class="btn" data-key="55">7</a>
+            <a href="#" class="btn operation">/</a>
+            <a href="#" class="btn operation">del</a>
+            <a href="#" class="btn scientific">INV</a>
+            <a href="#" class="btn scientific">DEG</a>
+            <a href="#" class="btn scientific">%</a>
         </div>
+        <div class="row-fluid">
+            <a href="#" class="btn" data-key="54">6</a>
+            <a href="#" class="btn" data-key="53">5</a>
+            <a href="#" class="btn" data-key="52">4</a>
+            <a href="#" class="btn operation">*</a>
+            <a href="#" class="btn operation">C</a>
+            <a href="#" class="btn scientific">sin</a>
+            <a href="#" class="btn scientific">cos</a>
+            <a href="#" class="btn scientific">tan</a>
+        </div>
+        <div class="row-fluid">
+            <a href="#" class="btn" data-key="51">3</a>
+            <a href="#" class="btn" data-key="50">2</a>
+            <a href="#" class="btn" data-key="49">1</a>
+            <a href="#" class="btn operation">-</a>
+            <a href="#" class="btn operation">C</a>
+            <a href="#" class="btn scientific">in</a>
+            <a href="#" class="btn scientific">log</a>
+            <a href="#" class="btn scientific">!</a>
+        </div>   
+        <div class="row-fluid">
+            <a href="#" class="btn" data-key="46">.</a>
+            <a href="#" class="btn" data-key="48">0</a>
+            <a href="#" class="btn">C</a>
+            <a href="#" class="btn operation">+</a>
+            <a href="#" class="btn operation">=</a>
+            <a href="#" class="btn scientific">pi</a>
+            <a href="#" class="btn scientific">e</a>
+            <a href="#" class="btn scientific">^</a>
+        </div>    
     </div>
-    
-    
+    </div>
 </div>
 </body>
 </html>

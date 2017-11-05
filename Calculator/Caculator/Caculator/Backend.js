@@ -93,3 +93,10 @@ function PutOperand(clicked_id) {
     default:
     }
 }
+
+$(document).keypress(function(e){
+    debugger;
+    var element = $('*[data-key="'+e.which+'"]');
+}
+
+);
